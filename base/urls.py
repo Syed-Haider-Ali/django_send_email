@@ -3,5 +3,5 @@ from .views import EmailAPIView
 
 
 urlpatterns = [
-    path('', EmailAPIView.as_view({'post','send'}))
+    path('', EmailAPIView.as_view({'post':'send'})),
 ]
